@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tim Gaziano</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="jumbotron" id="headBar">
+      <h1>Tim Gaziano's Portfolio</h1>
+      <hr>
+      <b><u>Skills:</u></b>   Javascript, Python, Jquery, Node, Express, HTML5, CSS3, JSON, AJAX <br>
+                            MySQL, NoSql (firebase), wireframing, adobe creative suite, Mac and Windows OS
+    </div> <!-- End of JumboTron -->
+<!-- *************************************************NAVBAR -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://github.com/TimGaz92">JavaScript / Web Developer</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="mailto:timgaziano@gmail.com">Email<span class="sr-only">(current)</span></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">External Links<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://www.linkedin.com/in/tim-gaziano-9491818b/">Linkedin</a></li>
+            <li><a href="https://github.com/TimGaz92">Github</a></li>
+            <li><a href="https://docs.google.com/document/d/1AZugPVrXF3md-WoKuqq7bCMDIYpQiLeMlISBgAYc0bE/edit?usp=sharing">Resume</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav> <!-- END OF NAVBAR -->
+    <div class="row">
+    <!-- First Row of Projects -->
+      <div class="col-md-4">
+        <h3>T.I.R.I</h3>
+        <hr>
+        <h4>A command line application that allows users to check the weather, read tweets, search for songs and search for movies. This application is powered by <b><u>Node.js</u></b>, </h4>more detail on specific node packages can be found in the Github repo. <br>
+        <button class="btn btn-default" id="projectOneBTN"> More Information</button>
+      </div>
+
+      <div class="col-md-4">
+        <h3>Matching Application</h3>
+        <hr>
+        <h4>An application that matches people based on their answers to various questions. This application uses <b><u>Node.JS</u></b> and  <b><u>Bootstrap / HTML</u></b> for the front end UI. This application is deployed to Heroku powered by an <b><u>Express</u></b> Server</h4> More specific informaition can be found on the Github Repo, and a link to the deployed Heroku application is availible by clicking more information. <br>
+        <button class="btn btn-default" id="projectTwoBTN"> More Information</button>
+      </div>
+
+      <div class="col-md-4">
+        <h3>Bow Tuning Application</h3>
+        <hr>
+        <h4>A simple <u><b>Python</b></u> application for calculating Archery sight pin adjustments </h4>
+        further information may be found on the application's github page which may be found by clicking the more information button <br>
+        <button class="btn btn-default" id="projectThreeBTN"> More Information</button>
+      </div>
+</div> <!-- end of First Row -->
+  <div class="row">
+        <div class="col-md-4">
+        <h3>Burger Application</h3>
+        <hr>
+        <h4>a full stack application hosted with <u><b>Express.js</b></u>. The Application allows users to acess, change and delete information from a <b><u>MySql</u></b> database. The application uses <b><u>handlebars.js</u></b> to dyanamically build HTML pages. <br>
+        <button class="btn btn-default" id="projectFiveBTN"> More Information</button>
+      </div>
+      <div class="col-md-4">
+        <h3>This Page - Portfolio</h3>
+        <hr>
+        <h4>I built this page using an <u><b>Express.js</b></u> implimented server, <u><b>Bootstrap CSS</b></u> and HTML </h4>
+        <button class="btn btn-default" id="projectFourBTN"> More Information</button>
+      </div>
+      <div class="col-md-4">
+        <h3>The Archer's Paradox</h3>
+        <hr>
+         <h4>A MongoDB backed webscraper, for scraping news and general information from variious Archery news sources </h4>
+        <h4>I built this page using <u><b>Express.js</b></u>, <u><b>MongoDB</b></u> and <u><b>Cheerio</b></u> for scraping the web.</h4>
+        <button class="btn btn-default" id="projectFourBTN"> More Information</button>
+      </div>
+
+
+  </div> <!-- END OF SECOND ROW -->
+  </div> <!-- End of Main Container -->
+
+<!-- Modal for Project 1 -->
+<div class="modal fade" id="ProjectOneModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Project Information:</h4>
+        </div>
+        <div class="modal-body">
+            <a href="https://github.com/TimGaz92/tiri">Github Repository</a>
+            <div>
+              <h5>Text Interface and Recognition Interface</h5>
+              <br>
+              This command line personal assistant will tell you the weather, check twitter, look up songs, find movies, and even speak to you!
+              <br>
+              requests in the application must come from the command line in the following format: searchType first (twitter, weather, movie etc. ) followed by your search term ( "my search term")
+              <br>
+                This application requires the following Node.js packages:
+                <ul>
+                  <li>Request</li>
+                  <li>Spotify</li>
+                  <li>Google text to speach</li>
+                  <li>Twitter</li>
+                  <li>Weather-JS</li>
+                </ul>  
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END OF PROJECT ONE MODAL -->
+<div class="modal fade" id="ProjectTwoModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Project Information:</h4>
+        </div>
+        <div class="modal-body">
+            <a href="https://github.com/TimGaz92/FindFriends">Github Repository</a><br>
+            <a href="https://pure-everglades-19528.herokuapp.com/">Heroku Page</a>
+            <div>
+              <h5>Matching Application</h5>
+              <br>
+             A Node / express application that allows user to match with other users based on a limited set of lifestyle questions. 
+              <br>
+              This application is powered by Node / Express and uses bootstrap and HTML for the front end user interface. 
+              <br>
+                This application requires the following Node.js packages:
+                <ul>
+                  <li>Body Parser</li>
+                  <li>Express</li>
+                </ul>  
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END OF PROJECT TWO MODAL -->
+<div class="modal fade" id="ProjectThreeModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Project Information:</h4>
+        </div>
+        <div class="modal-body">
+            <a href="https://github.com/TimGaz92/bowTuning">Github Repository</a><br>
+            <div>
+              <h5>Bow Tuning  Application</h5>
+              <br>
+             A Python application that allows user to enter information about missed shots to calculate sight pin adjustments 
+              <br>
+              This application is powered by Python - further imporvements will allow users to log information  into a MySQL database 
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END OF PROJECT THREE MODAL -->
+<div class="modal fade" id="ProjectFourModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Project Information:</h4>
+        </div>
+        <div class="modal-body">
+            <a href="">Github Repository</a><br>
+            <div>
+              <h5>Personal Portfolio</h5>
+              <br>
+             A Personal portfolio, featuring links to external documents, email, etc. Page is launched with an Express.js server and features Modals and Bootstrap.  
+            </div>
+        	</div>
+        	<div class="modal-footer">
+        		<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+    		</div>    
+    	</div>	
+    </div>
+</div>
+  
+<!-- END OF MODAL FOUR -->
+<div class="modal fade" id="ProjectFiveModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Project Information:</h4>
+        </div>
+        <div class="modal-body">
+            <a href="https://github.com/TimGaz92/burgerApp">Github Repository</a><br>
+            <div>
+              <h5>Burger Application</h5>
+              <br>
+          		A full stack burger application.  The page allows users to read, update and delete information stored in a mysql database. The HTML is dyanmically created using handlebars. 
+          		<br>
+          		This application requires the following Node.js packages:
+                <ul>
+                  <li>Body Parser</li>
+                  <li>Express</li>
+                  <li>MySql</li>
+                  <li>Handlebars</li>
+                </ul>  
+            </div>
+        </div>
+        	<div class="modal-footer">
+          		<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>	
+</div>		
+<script type="text/javascript">
+  //modal functionalities
+$("#projectOneBTN").on("click", function(){
+	console.log("project 1");
+  $("#ProjectOneModal").modal("toggle");
+});
+$("#projectTwoBTN").on("click", function(){
+	console.log("project 2");
+  $("#ProjectTwoModal").modal("toggle");
+});
+$("#projectThreeBTN").on("click", function(){
+	console.log("project 3");
+  $("#ProjectThreeModal").modal("toggle");
+});
+$("#projectFourBTN").on("click", function(){
+	console.log("project 4");
+  $("#ProjectFourModal").modal("toggle");
+});
+$("#projectFiveBTN").on("click", function(){
+	console.log("project 5");
+  $("#ProjectFiveModal").modal("toggle");
+});
+</script>
+
+
+
+</body>
+</html>
+<link rel="stylesheet" type="text/css" href="template.css">
